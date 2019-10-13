@@ -53,7 +53,7 @@
                             Perfil
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+                            <a class="dropdown-item" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
                         </div>
 
                     </li>
@@ -263,7 +263,7 @@
 
               </div>
 
-              <!--Modal-->
+              <!--Modal login-->
 
               <div id="id01" class="modal">
   
@@ -273,8 +273,8 @@
                     </div>
                 
                     <div class="container">
-                      <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
+                      <label for="Email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Username" name="Email" required>
                 
                       <label for="psw"><b>Password</b></label>
                       <input type="password" placeholder="Enter Password" name="psw" required>
@@ -287,15 +287,68 @@
                 
                     <div class="container" style="background-color:#f1f1f1">
                       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                      <span class="psw">Forgot <a href="#">password?</a></span>
+                      <span class="psw">Forgot <a href="#"  onclick="document.getElementById('id03').style.display='block'">password?</a></span>
                       <br>
-                      <span class="psw" style="align-self: center;">Create <a href="#"> New Account</a> </span>
+                      <span class="psw" style="align-self: center;">Create <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"> New Account</a> </span>
                       <br><br><br><br><br>
                     </div>
                   </form>
                 </div>
-                
+                <!--Modal cadastrar-->
+                <div id="id02" class="modal">
+  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none' ; document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      </div>
+                  
+                      <div class="container">
+                        <label for="Email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="Email" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
 
+                        <label for="CPF"><b>CPF</b></label>
+                        <input type="text" placeholder="CPF" name="cpf" required>
+
+                        <label for="Tel"><b>Telefone</b></label>
+                        <input type="tel" placeholder="(xx) xx-xxxxx-xxxx" name="Tel" required>
+                          
+                        <button type="submit">Cadastrar</button>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Ja é registrado faça <a href="#" onclick="document.getElementById('id02').style.display='none'" style="width: auto;" title="Close Modal">Login</a></span>
+                        <br><br><br><br><br>
+                      </div>
+                    </form>
+                  </div>
+
+
+                  <!--Modal Recuperar senha-->
+
+                  <div id="id03" class="modal">
+  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      </div>
+                  
+                      <div class="container">
+
+
+                        <label for="Email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="Email" required>                          
+                        <button type="submit">Recuperar senha</button>
+                      </div>
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                        <br><br><br><br><br>
+                      </div>
+                    </form>
+                  </div>
               </div>
 
 
