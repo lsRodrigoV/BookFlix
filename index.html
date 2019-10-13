@@ -53,8 +53,7 @@
                             Perfil
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Login</a>
-                            <a class="dropdown-item" href="#">Cadastrar</a>
+                            <a class="dropdown-item" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
                         </div>
 
                     </li>
@@ -148,8 +147,6 @@
 
                     <div class="col-9">
 
-                        <div data-spy="scroll" data-target="navbarVertical" data-offset="0" class="scrollspy-example" style="position: relative; height: 720px; overflow: auto;">
-
                             <div class="box galeria">
                                 <img src="img/book2.jpg" href="#book1" alt="Book1">
                                 <p class="g-col-2 mb12"> Taming Master </p>
@@ -183,13 +180,10 @@
                                 <img src="img/book8.jpg" style="margin-left:30px;" href="#book8" alt="Book8">
                                 <p style="margin-left:30px;" class="g-col-2 mb12"> Soreveign of the Karmic System</p>
                             </div>
-                            
+                            <br><br><br><br><br><br><br><br><br><br>
+
 
                     </div>
-
-
-                  </div>
-
                   <!-- corpo -->
                   <div>
                       <h3>Recommended</h3>
@@ -204,13 +198,10 @@
                               <p>About this book</p>
                           </div>
   
-  
                       </div>
   
                       <div class="col-9">
-  
-                          <div data-spy="scroll" data-target="navbarVertical" data-offset="0" class="scrollspy-example" style="position: relative; height: 720px; overflow: auto;">
-  
+
                               <div class="box galeria">
                                   <img src="img/book2.jpg" href="#book1" alt="Book1">
                                   <p class="g-col-2 mb12"> Taming Master </p>
@@ -243,15 +234,71 @@
                               <div class="box galeria">
                                   <img src="img/book8.jpg" style="margin-left:30px;" href="#book8" alt="Book8">
                                   <p style="margin-left:30px;" class="g-col-2 mb12"> Soreveign of the Karmic System</p>
-                              </div>
-                              
-  
-                      </div>
-  
-  
+                              </div>            
+                              <br><br><br><br><br><br><br><br><br><br>
                     </div>
 
+                    <div class="row mb-5">
+
+                      <div class="galeria">
+                            <img class="cardImg" style="margin: 20px;" src="img/cardy1.jpg" alt="">
+                            <div class="textimg">
+                      </div>
+
+                      </div>
+                      <div class="galeria">
+                          <img class="cardImg" style="margin: 20px;" src="img/cardy2.jpg" alt="">
+                          <div class="textimg">
+                      </div>
+
+                    </div>
+                    <div class="galeria">
+                        <img class="cardImg" style="margin: 20px;" src="img/cardy3.jpg" alt="">
+                        <div class="textimg">
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
+
+              <!--Modal-->
+
+              <div id="id01" class="modal">
+  
+                  <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                      <br>
+                      <span class="psw" style="align-self: center;">Create <a href="#"> New Account</a> </span>
+                      <br><br><br><br><br>
+                    </div>
+                  </form>
+                </div>
+                
+
+              </div>
+
+
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
